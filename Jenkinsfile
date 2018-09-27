@@ -1,5 +1,8 @@
 node {
+    checkout scm
+
     stage('Build') {
-        sh 'mvn clean install'
+        def mvnHome = tool 'M3'
+        sh "${mvnHome}/bin/mvn clean install"
     }
 }
