@@ -59,7 +59,7 @@
 						</goals>
 						<configuration>
 							<publisher>
-								<contextUrl>http://artifactory:9999</contextUrl>
+								<contextUrl>http://artifactory:8081</contextUrl>
 								<username>admin</username>
 								<password>password</password>
 								<includePatterns>
