@@ -6,7 +6,8 @@ services:
       - "8888:8080"
     volumes:
       - /home/staskolodyuk/jenkins_home:/var/jenkins_home
-  artifactory:
-    image: docker.bintray.io/jfrog/artifactory-oss:latest
-    ports:
-      - "9999:8081"
+#  artifactory:
+#    image: docker.bintray.io/jfrog/artifactory-oss:latest
+#    ports:
+#      - "9999:8081"
+#    container_name: artifactory
