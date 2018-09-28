@@ -59,7 +59,7 @@
 						</goals>
 						<configuration>
 							<publisher>
-								<contextUrl>http://sdlcbrm.hiw.com/artifactory</contextUrl>
+								<contextUrl>http://artifactory:9999</contextUrl>
 								<username>admin</username>
 								<password>password</password>
 								<includePatterns>
