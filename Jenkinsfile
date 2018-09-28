@@ -1,18 +1,9 @@
 node {
-    def mvnHome = tool 'M3'
+   checkout scm
 
-    stage('Checkout') {
-        checkout scm
-    }
+   def mvnHome = tool 'M3'
 
-    stage('Build') {
-        sh "${mvnHome}/bin/mvn clean install -DskipTests"
-    }
-
-    stage('Test') {
-        sh "${mvnHome}/bin/mvn test"
-    }
-
-    mail to: staskolodyuk@gmail.com, body: 'Build has successfully passed'
-
+   stage('Build') {
+      sh "${mvnHome}/bin/mvn clean install"
+   }
 }
