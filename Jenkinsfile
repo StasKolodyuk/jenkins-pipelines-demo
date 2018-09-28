@@ -11,4 +11,6 @@ node {
       sh "${mvnHome}/bin/mvn test"
    }
 
+   mail to: 'staskolodyuk@gmail.com', body: 'Build has successfully passed'
+
 }
