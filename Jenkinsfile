@@ -10,4 +10,8 @@ node {
     stage('Test') {
         sh "${mvnHome}/bin/mvn test"
     }
+
+    stage('Publish to Artifactory') {
+        sh "${mvnHome}/bin/mvn package deploy:deploy"
+    }
 }
